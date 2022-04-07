@@ -1,0 +1,314 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.main {
+  background-color: rgba(43, 38, 80, 0.541);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 4rem 1fr 30rem 1rem;
+  grid-template-areas:
+    "logo logo logo logo"
+    "nav nav nav nav"
+    "galeria_ini galeria_ini galeria_ini galeria_ini"
+    "texto_ini texto_ini texto_ini texto_ini"
+    "footer footer footer footer";
+}
+
+body{
+  background-color: rgba(43, 38, 80, 0.541);
+
+}
+
+.logo{
+  grid-area: logo;
+  margin-bottom: 5px solid black;
+}
+
+.img_logo{
+  width: 100%;
+}
+
+
+
+.subTitulos {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.subTitulos3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.barra {
+  grid-area: nav;
+}
+
+ul {
+  height: 2.5rem;
+  text-align: center;
+  background-color: rgb(22, 22, 70);
+}
+
+ul li {
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+a:visited {
+  color: white;
+}
+
+.imagen_ini {
+  grid-area: galeria_ini;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 92%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  margin-left: 5rem;
+}
+
+.imgGale{
+  width: 20rem;
+  margin: 3rem;
+
+}
+
+.form__contacto {
+  margin-left: 60px;
+}
+
+.form__registro {
+  border: 2px solid black;
+  border-radius: 15px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.bot__env {
+  margin: 5px;
+  display: inline;
+  font-weight: bolder;
+}
+
+.bot__reset {
+  display: inline;
+  margin: 10px 5px;
+  font-weight: bolder;
+}
+
+.texto__registro--texto {
+  margin: 5px;
+  padding: 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.form__logeo {
+  border: 2px solid black;
+  border-radius: 15px;
+  display: inline-block;
+  position: absolute;
+  margin-left: 25%;
+}
+
+.bot__logeo {
+  margin: 5px;
+  display: inline;
+  font-weight: bolder;
+}
+
+.bot__logeo {
+  display: inline;
+  margin: 10px 5px;
+  font-weight: bolder;
+}
+
+.texto__logeo--texto {
+  margin: 5px;
+  padding: 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+table {
+  top: 40%;
+  right: 20px;
+  position: absolute;
+}
+
+.texto_ini {
+  grid-area: texto_ini;
+  padding: 15px;
+  margin: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+th {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+td {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-weight: bolder;
+}
+
+input {
+  display: block;
+  padding: 4px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+}
+
+.iframes {
+  margin: 15px;
+  padding-left: 23%;
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(19, 19, 83);
+  color: white;
+  text-transform: uppercase;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+}
+
+
+/*MEDIAS QUERIES*/
+
+/* tablet 800px*/
+
+@media screen and (min-width: 481px) and (max-width:1023px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 3rem 1fr 55rem 1rem;
+    grid-template-areas:
+      "logo logo"
+      "nav nav"
+      "galeria_ini galeria_ini"
+      "texto_ini texto_ini"
+      "footer footer";
+  }
+
+
+  .img_logo{
+    width:48.9rem;
+  }
+
+  ul {
+    height: 2.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(22, 22, 70);
+  }
+  
+  .imagen_ini {
+    margin-left: 1rem;
+    grid-area: galeria_ini;
+    width: 45rem;
+    height: 27rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+  }
+  .imgGale {
+    width: 18rem;
+    height: 12rem;
+    margin: 1rem;
+    display: flex;
+  }
+}
+
+/* celular 480px */
+
+@media only screen and (max-width:480px) {
+  .main{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 15rem 0.5fr 0.1fr 4rem;
+    grid-template-areas:
+      "logo"
+      "nav"
+      "galeria_ini"
+      "texto_ini"
+      "footer"
+  }
+
+  .img_logo{
+    width: 23.4rem;
+    height: 12rem;
+  }
+
+  .barra{
+    width: 23.4rem;
+    height: 12rem;
+  }
+
+  .barra ul{
+    height:14rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(22, 22, 70);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  .imagen_ini {
+    margin: 20px;
+    width: 20rem;
+    height: 70rem;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+  .imgGale {
+    width: 15rem;
+    height: 15rem;
+
+  }
+  .texto_ini {
+    margin-left: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    width: 23.4rem;
+    height: 4rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+  }
+  
+} 
+
+/*Fin media*/
