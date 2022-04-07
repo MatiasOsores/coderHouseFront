@@ -258,12 +258,12 @@ footer {
   }
 
   .img_logo{
-    width: 23.4rem;
+    width: 25rem;
     height: 12rem;
   }
 
   .barra{
-    width: 23.4rem;
+    width: 25rem;
     height: 12rem;
   }
 
@@ -299,7 +299,7 @@ footer {
     align-items: center;
   }
   footer {
-    width: 23.4rem;
+    width: 25rem;
     height: 4rem;
     display: flex;
     flex-wrap: nowrap;
