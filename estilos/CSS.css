@@ -7,13 +7,38 @@
   background-color: rgba(43, 38, 80, 0.541);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.3fr 4rem 1fr 30rem 1rem;
+  grid-template-rows: 18rem 4rem 1fr 30rem 1rem;
   grid-template-areas:
-    "logo logo logo logo"
+    "logo logo2 logo2 logo2"
     "nav nav nav nav"
     "galeria_ini galeria_ini galeria_ini galeria_ini"
     "texto_ini texto_ini texto_ini texto_ini"
     "footer footer footer footer";
+}
+
+.contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1rem;
+  grid-template-areas: 
+  "logo logo . ."
+  "nav nav nav nav"
+  "mensaje mensaje mensaje mensaje"
+  "ubicacion ubicacion ubicacion ubicacion"
+  "footer footer footer footer"
+}
+
+.ubicacion{
+  grid-area: ubicacion;
+}
+
+
+.mensaje{
+  grid-template-areas: mensaje;
+}
+
+.redes{
+  grid-template-areas: redes;
 }
 
 body{
@@ -24,10 +49,24 @@ body{
 .logo{
   grid-area: logo;
   margin-bottom: 5px solid black;
+  height: 10rem;
+  width: 14rem;
+  margin-top: 4px;
+  margin-left: 6px;
 }
+
+.logo2{
+  grid-area: logo2;
+  width: 103rem;
+  height: 17.5rem;
+  padding: 5px 0px 0px 4px;
+
+}
+
 
 .img_logo{
   width: 100%;
+  border-radius: 4rem;
 }
 
 
@@ -86,9 +125,18 @@ a:visited {
 }
 
 .imgGale{
-  width: 20rem;
+  width: 28rem;
   margin: 3rem;
+  animation-delay: 5s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 
+
+.imgGale:hover{
+  transform: scale(1.2);
+  transition: all 2s;
 }
 
 .form__contacto {
