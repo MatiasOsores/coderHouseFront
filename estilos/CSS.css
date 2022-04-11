@@ -4,7 +4,7 @@
 }
 
 .main {
-  background-color: rgba(43, 38, 80, 0.541);
+  background-color: rgba(148, 141, 202, 0.541);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 18rem 4rem 1fr 30rem 1rem;
