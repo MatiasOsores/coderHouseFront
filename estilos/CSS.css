@@ -7,7 +7,7 @@
   background-color: rgba(148, 141, 202, 0.541);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 18rem 4rem 1fr 30rem 1rem;
+  grid-template-rows: 18rem 4rem 2fr 25rem 1rem;
   grid-template-areas:
     "logo logo2 logo2 logo2"
     "nav nav nav nav"
@@ -16,29 +16,28 @@
     "footer footer footer footer";
 }
 
-.contact{
+.conta{
+  background-color: rgba(148, 141, 202, 0.541);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1rem;
+  grid-template-rows: 18rem 4rem 3rem 1fr 1fr 1rem;
   grid-template-areas: 
-  "logo logo . ."
+  "logo logo logo2 logo2"
   "nav nav nav nav"
   "mensaje mensaje mensaje mensaje"
+  "contact contact contact redes"
   "ubicacion ubicacion ubicacion ubicacion"
   "footer footer footer footer"
 }
 
+.contact{
+  padding-left: 20px;
+  margin: 15px;
+  grid-area: contact;
+}
+
 .ubicacion{
   grid-area: ubicacion;
-}
-
-
-.mensaje{
-  grid-template-areas: mensaje;
-}
-
-.redes{
-  grid-template-areas: redes;
 }
 
 body{
@@ -59,7 +58,7 @@ body{
   grid-area: logo2;
   width: 103rem;
   height: 17.5rem;
-  padding: 5px 0px 0px 4px;
+  
 
 }
 
@@ -75,6 +74,7 @@ body{
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   padding-bottom: 30px;
+  grid-area: mensaje;
 }
 
 .subTitulos3 {
@@ -118,7 +118,7 @@ a:visited {
   border: 1px solid black;
   border-radius: 20px;
   width: 92%;
-  height: 30rem;
+  height: 33rem;
   display: flex;
   justify-content: center;
   margin-left: 5rem;
@@ -126,7 +126,7 @@ a:visited {
 
 .imgGale{
   width: 28rem;
-  margin: 3rem;
+  margin-left: 5rem;
   animation-delay: 5s;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -139,8 +139,9 @@ a:visited {
   transition: all 2s;
 }
 
-.form__contacto {
-  margin-left: 60px;
+.formulario__contacto{
+  /* margin-left: 60px; */
+  grid-area: formulario;
 }
 
 .form__registro {
@@ -197,10 +198,11 @@ a:visited {
 }
 
 table {
-  top: 40%;
+  top: 50%;
   right: 20px;
   position: absolute;
-}
+  grid-area: redes;
+} 
 
 .texto_ini {
   grid-area: texto_ini;
@@ -228,7 +230,8 @@ input {
 
 .iframes {
   margin: 15px;
-  padding-left: 23%;
+  padding-left: 20px;
+
 }
 
 footer {

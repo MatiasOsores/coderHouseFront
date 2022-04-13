@@ -14,32 +14,41 @@
     <link rel="stylesheet" href="../estilos/CSS.css" />
     <title>CONTACTO</title>
 </head>
-<body class="contact">
-    <header class="logo"><img src="../imagenes/prueba 2.png" alt="Logo de la empresa" class="img_logo animate__animated animate__bounceInUp"></header>
-    <div class="logo2">
-    <img src="../imagenes/logo44.png" alt="" class="logo2 img_logo animate__animated animate__bounceInUp">
-     </div>
-    <nav class="nav">
-        <ul>
-          <li><a href="../index.html">inicio</a></li>
-          <li><a href="../links/contacto.html">Contacto</a></li>
-          <li><a href="../links/sobre.html">Sobre nosotros</a></li>
-          <li><a href="../links/registro.html">Registro / Inicio Sesión</a></li>
-          <li><a href="../links/galeria.html">Galeria</a></li>
-        </ul>
-      </nav>
-      <div class="mensaje">
+<body class="conta">
+  <header class="logo"><img src="../imagenes/prueba 2.png" alt="Logo de la empresa" class="img_logo animate__animated animate__bounceInUp"></header>
+  <div class="logo2">
+  <img src="../imagenes/logo44.png" alt="" class="logo2 animate__animated animate__bounceInUp container-fluid">
+   </div>
+   <nav class="barra">
+    <ul>
+      <li><a href="../index.html">inicio</a></li>
+      <li><a href="../links/contacto.html">Contacto</a></li>
+      <li><a href="../links/sobre.html">Sobre nosotros</a></li>
+      <li><a href="../links/registro.html">Registro / Inicio Sesión</a></li>
+      <li><a href="../links/galeria.html">Galeria</a></li>
+    </ul>
+  </nav>
+  <div class="contact">
       <h2 class="subTitulos">¡ Escribenos y dejanos tu mensaje !</h2>
-      <form class="form__contacto" action="">
-        <input class="contacto" type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre *" required>
-        <input class="contacto" type="mail" name="mail" id="mail" placeholder="Ingresa un email *" required>
-        <textarea name="" id="" cols="70" rows="10" placeholder="INGRESA TU MENSAJE AQUI"></textarea>
+      <div class="formulario__contacto">
+        <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email</label>
+       </div>
+       <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Nombre</label>
+       </div>
+       <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+        <label for="floatingTextarea2">Ingresa tu mensaje</label>
         <input type="submit" value="Enviar">
         <input type="reset" value="Resetear">
-     </form>
-        </div>
-    <div class="redes">
-      <table border="3">
+         </div>
+       </div>
+      </div>
+
+      <table class="redes" border="3">
           <th colspan="2">Nuestras redes sociales</th>
           <tr>
               <td>Facebook</td>
@@ -54,8 +63,7 @@
               </tr>
                </tr>
       </table>
-    </div>
-    
+  
         <div class="ubicacion">
       <h3 class="subTitulos3">¿Donde ubicarnos?</h3>
       <iframe class="iframes" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168878894506!2d-58.38375908417492!3d-34.603734465007136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1647207968578!5m2!1ses!2sar" width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
