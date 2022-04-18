@@ -247,7 +247,7 @@ footer {
 }
 
 
-/*MEDIAS QUERIES*/
+/*INICIO DE MEDIAS QUERIES*/
 
 /* tablet 800px*/
 
@@ -264,9 +264,11 @@ footer {
   }
 
 
-  .img_logo{
-    width:48.9rem;
+  .imgLogo{
+    width: 10rem;
+    height: 10rem;
   }
+ 
 
   ul {
     height: 2.5rem;
@@ -299,7 +301,7 @@ footer {
 @media only screen and (max-width:480px) {
   .main{
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 15rem 0.5fr 0.1fr 4rem;
+    grid-template-rows: 16rem 15rem 52rem 0.1fr 4rem;
     grid-template-areas:
       "logo"
       "nav"
@@ -309,17 +311,23 @@ footer {
   }
 
   .img_logo{
-    width: 25rem;
-    height: 12rem;
+    width: 15rem;
+    height: 15rem;
+    margin-left: 50px;
+  }
+
+  .logo2{
+    display: none;
   }
 
   .barra{
-    width: 25rem;
+    width: 22.5rem;
     height: 12rem;
   }
 
   .barra ul{
     height:14rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: rgb(22, 22, 70);
@@ -331,7 +339,7 @@ footer {
   .imagen_ini {
     margin: 20px;
     width: 20rem;
-    height: 70rem;
+    height: 50rem;
     display: flex;
     justify-items: center;
     flex-direction: column;
@@ -339,8 +347,9 @@ footer {
 
   }
   .imgGale {
-    width: 15rem;
-    height: 15rem;
+    width: 13rem;
+    height: 13rem;
+    margin: 2px 3px 2px 50px;
 
   }
   .texto_ini {
@@ -350,16 +359,43 @@ footer {
     align-items: center;
   }
   footer {
-    width: 25rem;
+    width: 22.5rem;
     height: 4rem;
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-
   }
-  
-} 
+  .iframes{
+    width: 20rem;
+    height: 25rem;
+  }
+  .subTitulos {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 8rem;
+    width: 20rem;
+    } 
 
-/*Fin media*/
+    table {
+      margin-top: 79rem;
+      grid-area: redes;
+
+    } 
+
+    .formulario__contacto{
+      grid-area: formulario;
+      width: 20rem;
+    
+    }
+    .animate__flash{
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+
+    }
+}
+
+
+
+    /*FIN  QUERIES*/
