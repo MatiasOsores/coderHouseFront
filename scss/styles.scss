@@ -1,0 +1,243 @@
+@import "variables";
+@import "mediaQueries";
+
+
+.main {
+    background-color: $colorDeFondo;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 18rem 4rem 1fr 30rem 1rem;
+    grid-template-areas:
+      "logo logo2 logo2 logo2"
+      "nav nav nav nav"
+      "galeria_ini galeria_ini galeria_ini galeria_ini"
+      "texto_ini texto_ini texto_ini texto_ini"
+      "footer footer footer footer";
+  }
+  
+  .contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1rem;
+    grid-template-areas: 
+    "logo logo . ."
+    "nav nav nav nav"
+    "mensaje mensaje mensaje mensaje"
+    "ubicacion ubicacion ubicacion ubicacion"
+    "footer footer footer footer"
+  }
+  
+  .ubicacion{
+    grid-area: ubicacion;
+  }
+  
+  
+  .mensaje{
+    grid-template-areas: mensaje;
+  }
+  
+  .redes{
+    grid-template-areas: redes;
+  }
+  
+  body{
+    background-color: $colorDeFondo;
+  
+  }
+  
+  .logo{
+    grid-area: logo;
+    margin-bottom: 5px solid black;
+    height: 10rem;
+    width: 14rem;
+    margin-top: 4px;
+    margin-left: 6px;
+  }
+  
+  .logo2{
+    grid-area: logo2;
+    width: 103rem;
+    height: 17.5rem;
+    padding: 5px 0px 0px 4px;
+  
+  }
+  
+  
+  .img_logo{
+    width: 100%;
+    border-radius: 4rem;
+  }
+  
+  
+  
+  .subTitulos {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-bottom: 30px;
+   
+  .subTitulos3 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+  
+  .barra {
+    grid-area: nav;
+  }
+  
+  ul {
+    height: 2.5rem;
+    text-align: center;
+    background-color: rgb(22, 22, 70);
+   
+     li {
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+
+        a {
+    color: white;
+    text-decoration: none;
+
+            &:hover{
+                color:red;
+                   &:visited{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+  
+  .imagen_ini {
+    grid-area: galeria_ini;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 92%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 5rem;
+  }
+  
+  .imgGale{
+    width: 28rem;
+    margin: 3rem;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+        &:hover{
+            transform: scale(1.2);
+            transition: all 2s;
+        }
+  }
+  
+  
+  .form__contacto {
+    margin-left: 60px;
+  }
+  
+  .form__registro {
+    border: 2px solid black;
+    border-radius: 15px;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .bot__env {
+    margin: 5px;
+    display: inline;
+    font-weight: bolder;
+  }
+  
+  .bot__reset {
+    display: inline;
+    margin: 10px 5px;
+    font-weight: bolder;
+  }
+  
+  .texto__registro--texto {
+    margin: 5px;
+    padding: 1px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+  
+  .form__logeo {
+    border: 2px solid black;
+    border-radius: 15px;
+    display: inline-block;
+    position: absolute;
+    margin-left: 25%;
+  }
+  
+  .bot__logeo {
+    margin: 5px;
+    display: inline;
+    font-weight: bolder;
+
+     .bot__logeo {
+    display: inline;
+    margin: 10px 5px;
+    font-weight: bolder;
+  }
+}
+  
+  .texto__logeo--texto {
+    margin: 5px;
+    padding: 1px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+  
+  table {
+    top: 40%;
+    right: 20px;
+    position: absolute;
+  
+      th {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+            td {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+  }
+}
+  
+  .texto_ini {
+    grid-area: texto_ini;
+    padding: 15px;
+    margin: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  input {
+    display: block;
+    padding: 4px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+  }
+  
+  .iframes {
+    margin: 15px;
+    padding-left: 23%;
+  }
+  
+  footer {
+    grid-area: footer;
+    background-color: rgb(19, 19, 83);
+    color: white;
+    text-transform: uppercase;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+  }
+
+
