@@ -1,1 +1,45 @@
 $colorDeFondo:rgba(148, 141, 202, 0.541);
+
+/*mapGet*/
+
+$estilosLogo:(
+    grid:logo,
+    marginAbajo: 5px solid black,
+    marginArriba: 4px,
+    marginIzq: 6px,
+);
+
+
+.logo{
+    grid-area: map-get($estilosLogo,grid);
+    margin-bottom: map-get($estilosLogo,marginAbajo);
+    margin-top: map-get($estilosLogo,marginArriba);
+    margin-left: map-get($estilosLogo,marginIzq);
+}
+
+
+/*Mixin*/
+
+@mixin tamanoLogo($width, $height){
+    width: $width;
+    height: $height;
+}
+
+.logo{
+    @include tamanoLogo (14rem, 10rem)
+}
+
+
+/*extend*/
+
+.bot__logeo {
+        margin: 5px;
+        font-weight: bolder; 
+        display: inline;
+        margin: 10px 5px;
+}
+
+.bot_logeo{
+    @extend .bot__logeo;
+
+}

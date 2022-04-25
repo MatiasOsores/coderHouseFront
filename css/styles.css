@@ -1,3 +1,22 @@
+/*mapGet*/
+.logo {
+  grid-area: logo;
+  margin-bottom: 5px solid black;
+  margin-top: 4px;
+  margin-left: 6px; }
+
+/*Mixin*/
+.logo {
+  width: 14rem;
+  height: 10rem; }
+
+/*extend*/
+.bot__logeo, .bot_logeo {
+  margin: 5px;
+  font-weight: bolder;
+  display: inline;
+  margin: 10px 5px; }
+
 /*MEDIAS QUERIES*/
 /* tablet 800px*/
 @media screen and (min-width: 481px) and (max-width: 1023px) {
@@ -198,11 +217,11 @@ ul {
   position: absolute;
   margin-left: 25%; }
 
-.bot__logeo {
+.bot__logeo, .bot_logeo {
   margin: 5px;
   display: inline;
   font-weight: bolder; }
-  .bot__logeo .bot__logeo {
+  .bot__logeo .bot__logeo, .bot_logeo .bot__logeo, .bot__logeo .bot_logeo, .bot_logeo .bot_logeo {
     display: inline;
     margin: 10px 5px;
     font-weight: bolder; }
